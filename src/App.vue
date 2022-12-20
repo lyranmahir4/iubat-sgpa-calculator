@@ -1,10 +1,10 @@
 <template>
     <div
-        class="block p-3 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700  items-center justify-center w-96 mx-auto ">
+        class="block p-3 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 items-center justify-center w-96 mx-auto ">
         <div class=" justify-center align-center ">
-            <h1 class="text-center p-2 text-4xl font-bold leading-none text-gray-900 md:text-4xl lg:text-4xl dark:text-white">IUBAT SGPA Calculator</h1>
-            <table class="table-auto text-left text-gray-500 dark:text-gray-400">
-                <thead class=" text-gray-700 uppercase ">
+            <h1 class="text-center p-2 text-4xl font-bold leading-none text-gray-900 md:text-4xl lg:text-4xl">IUBAT SGPA Calculator</h1>
+            <table class="table-auto text-left">
+                <thead class="uppercase ">
                     <tr>
                         <th scope="col" class="py-3 px-3 text-center">Subject</th>
                         <th scope="col" class="py-3 px-3 text-center">Grade</th>
@@ -12,16 +12,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="bg-white p-2 hover:bg-gray-50 dark:hover:bg-gray-600"
+                    <tr class="bg-white p-2 hover:bg-gray-50"
                         v-for="(row, index) in rows" :key="index">
                         <td>
                             <input
-                                class="p-2 bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-auto dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="p-2 bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-auto"
                                 v-model="row.subject" type="text" placeholder="Example: Subject 1" />
                         </td>
                         <td>
                             <select
-                                class="bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 v-model="row.grade">
                                 <option value="4.0">A</option>
                                 <option value="3.7">B+</option>
@@ -37,7 +37,7 @@
                         </td>
                         <td>
                             <input
-                                class="bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 v-model="row.credit" type="number" min="1" max="50" />
                         </td>
                     </tr>
@@ -47,14 +47,14 @@
         </div>
         <div class="flex justify-center align-center p-4">
             <button
-                class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800"
+                class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                 @click="addRow">Add Row</button>
         </div>
         <div class="p-4">
             <p class="text-center font-bold	">SGPA <span class="text-green-600 hover:text-green-700 text-2xl">{{ sgpa
             }}</span></p>
         </div>
-        <p class="text-sm text-center">Developed by Mahir Morshed Deep</p>
+        <p class="text-sm text-center">Developed by Mahir Morshed</p>
         <p class="text-sm text-center">GitHub: <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="https://github.com/lyranmahir4/iubat-sgpa-calculator">iubat-sgpa-calculator</a></p>
 
     </div>
