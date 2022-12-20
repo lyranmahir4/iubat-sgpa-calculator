@@ -55,6 +55,8 @@
             }}</span></p>
         </div>
         <p class="text-sm text-center">Developed by Mahir Morshed Deep</p>
+        <p class="text-sm text-center">GitHub: <a href="https://github.com/lyranmahir4/iubat-sgpa-calculator">iubat-sgpa-calculator</a></p>
+
     </div>
 </template>
   
