@@ -12,16 +12,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="bg-white p-2 hover:bg-gray-50"
+                    <tr class="bg-white p-2 "
                         v-for="(row, index) in rows" :key="index">
                         <td>
                             <input
-                                class="p-2 bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-auto"
+                                class="p-2 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-auto"
                                 v-model="row.subject" type="text" placeholder="Example: Subject 1" />
                         </td>
                         <td>
                             <select
-                                class="bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                class="bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 v-model="row.grade">
                                 <option value="4.0">A</option>
                                 <option value="3.7">B+</option>
@@ -37,7 +37,7 @@
                         </td>
                         <td>
                             <input
-                                class="bg-gray-50 border border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                class="bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 v-model="row.credit" type="number" min="1" max="50" />
                         </td>
                     </tr>
